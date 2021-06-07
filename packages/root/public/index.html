@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <!-- React Todo MicroFrontend -->
+    <script src="http://localhost:3001/remoteEntry.js"></script>
+    <!-- Svelte Todo MicroFrontend -->
+    <script src="http://localhost:3002/remoteEntry.js"></script>
+    <!-- Store Todo MicroFrontend -->
+    <script src="http://localhost:3003/remoteEntry.js"></script>
+  </head>
+
+  <style>
+    body {
+      background-color: #282c34;
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .app-container {
+      margin-top: 100px;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <div>
+      <h1 class="app-container">This is the main app where all our mfe's will be injected</h1>
+      <div>
+        <div id="single-spa-application:react-todoInput"></div>
+        <div id="single-spa-application:svelte-showTodos"></div>
+      </div>
+    </div>
+  </body>
+</html>

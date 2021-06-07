@@ -1,0 +1,16 @@
+{
+  "name": "store",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "serve": "^11.3.0",
+    "single-spa": "^5.1.0",
+    "webpack": "git://github.com/webpack/webpack.git#dev-1",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack --mode production",
+    "serve": "serve dist -p 3003"
+  }
+}
